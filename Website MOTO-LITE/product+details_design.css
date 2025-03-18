@@ -1,0 +1,293 @@
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.logo-large {
+    width: 300px; /* Reduced size by half */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+
+.navbar .logo {
+    flex: 3; /* 30% of the space */
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links - Fix Alignment */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Home Button - Ensure it stays yellow */
+.navbar .index {
+    background-color: #FFD700 !important; /* Force yellow */
+    padding: 8px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block; /* Ensures proper padding */
+}
+
+.navbar .index:hover {
+    background-color: #ffcc00 !important; /* Slightly darker yellow on hover */
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EDEDED;
+    padding: 30px 45px;
+    border-radius: 60px;
+    
+    position: relative;
+    left: -10px;  /* Moves slightly left for disappearing effect */
+    width: 80vw;  /* Full viewport width */
+    max-width: none; 
+}
+
+/* Ensure Navigation Bar Stays Within a Container */
+.nav-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the gray nav bar */
+    width: 90%;
+}
+
+/* Navigation Links - Fix Alignment */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    justify-content: center; /* Centers nav items */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav Items - Make Sure They Are All The Same */
+.navbar ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Nav Links */
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 15px; /* Ensure equal padding */
+    border-radius: 30px;
+    display: flex;
+    align-items: center;  /* Ensures vertical centering */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Right-side Navbar (Cart + Login Button) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between cart and login button */
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+    background-color: #FFD700; /* Yellow background */
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; /* Smaller width */
+    height: 28px; /* Smaller height */
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+/* Cart Icon Hover Effect */
+.cart-icon:hover {
+    background-color: #ffcc00;
+}
+
+
+/* Login Button */
+.login-btn {
+    display: flex;
+    align-items: center;
+    background-color: #FFD700;
+    padding: 8px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #ffcc00;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.profile-icon i {
+    font-size: 20px;
+}
+
+
+
+/* Product Details Container */
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px; /* Increased from 1200px to 1400px */
+    width: 90%; /* Ensures responsiveness */
+    height: 400px;
+    margin: 50px auto;
+    padding: 30px; /* Increased padding */
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Background Section for Product Details */
+.product-section {
+    background: #a1a1a1; /* Light gray background */
+    width: 110vw; /* Full width of viewport */
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 50px 0; /* Adds spacing above and below */
+    display: flex;
+    justify-content: center; /* Centers content */
+    margin-left: calc(-1 * (100vw - 100%));
+}
+
+/* Product Image Section */
+.product-image {
+    flex: 1;
+    text-align: center;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+/* Product Details Section */
+.product-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Price */
+.product-price {
+    font-size: 1.8em;
+    color: #E44D26;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.buy-button, .cart-button {
+    background-color: #FFD700;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.buy-button:hover, .cart-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .product-image img {
+        max-width: 80%;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}

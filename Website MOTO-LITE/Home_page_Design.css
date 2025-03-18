@@ -1,0 +1,289 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto; /* Use `auto` instead of `visible` for better scroll behavior */
+}
+
+
+
+
+/* Header with Logo */
+header {
+    padding: 50px; /* Reduced padding to accommodate smaller logo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-large {
+    width: 300px; /* Reduced size by half */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+/* Auth and Cart Container */
+.auth-cart-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 20px; /* Increased padding for better spacing */
+    background-color: #f4f4f4;
+    margin-top: 10px; /* Added margin to push it down slightly */
+}
+
+.auth-box, .cart-box {
+    background-color: #FFD700;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.auth-box { order: 2; }
+.cart-box { order: 1; }
+
+.auth-box a, .cart-box a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.auth-box i, .cart-box i {
+    font-size: 16px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f0f0f0;
+    border: 5px solid #8a8a8a;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin-top: 180px; /* Ensure it starts below the header + navbar */
+}
+
+.categories {
+    width: 300px;
+    background-color: #fff;
+    border-right: 2px solid #ccc;
+    padding: 20px;
+    position: fixed; /* Keeps the sidebar in place */
+    left: 0;
+    top: 33.7%; /* Adjusts so it stays below the navbar */
+    bottom: 0;
+    height: auto;
+    overflow: visible; /* Ensures dropdown can appear outside */
+}
+
+/* Prevent Sidebar from Moving When Hovering */
+.dropdown {
+    position: relative; /* Ensures dropdowns are positioned correctly */
+}
+
+/* Sidebar Category List */
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar Items */
+.categories ul li {
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd; /* Line divider */
+    font-size: 1.1em;
+}
+
+/* Remove border from the last item */
+.categories ul li:last-child {
+    border-bottom: none;
+}
+
+/* Sidebar Links */
+.categories a {
+    text-decoration: none; /* Remove underline */
+    color: #333;
+    display: block; /* Make entire area clickable */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.categories a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Remove visited link color change */
+.categories a:visited {
+    color: inherit;
+}
+
+/* Ensure dropdown aligns properly */
+.dropdown {
+    position: relative; /* Needed for absolute positioning of dropdown content */
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative; /* Keep the main item positioned correctly */
+}
+
+/* Detached Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: fixed; /* Keeps it visible on the page */
+    left: calc(300px + 20px); /* Adjust based on sidebar width and padding */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    max-height: 400px; /* Prevents huge dropdowns */
+    overflow-y: auto; /* Allows scrolling if too many items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Product Section */
+.product-section {
+    margin-left: 340px; /* Matches sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 320px); /* Adjusted to fit */
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 2px solid #ccc;
+    padding-top: 20px;
+}
+
+/* Product Box */
+.product-box {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Divider between products */
+.product-box:not(:last-child) {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+/* Product Title */
+.product-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Product Subtitle */
+.product-subtitle {
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.buy-button, .cart-button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buy-button:hover, .cart-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .categories {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    .product-section {
+        margin-left: 0;
+        width: 100%;
+    }
+}

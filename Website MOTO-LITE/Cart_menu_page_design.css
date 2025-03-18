@@ -1,0 +1,277 @@
+/* Header Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.logo-large {
+    width: 300px; /* Reduced size by half */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+
+.navbar .logo {
+    flex: 3; /* 30% of the space */
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links - Fix Alignment */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Home Button - Ensure it stays yellow */
+.navbar .index {
+    background-color: #FFD700 !important; /* Force yellow */
+    padding: 8px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: inline-block; /* Ensures proper padding */
+}
+
+.navbar .index:hover {
+    background-color: #ffcc00 !important; /* Slightly darker yellow on hover */
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EDEDED;
+    padding: 30px 45px;
+    border-radius: 60px;
+    
+    position: relative;
+    left: -10px;  /* Moves slightly left for disappearing effect */
+    width: 80vw;  /* Full viewport width */
+    max-width: none; 
+}
+
+/* Ensure Navigation Bar Stays Within a Container */
+.nav-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the gray nav bar */
+    width: 90%;
+}
+
+/* Navigation Links - Fix Alignment */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    justify-content: center; /* Centers nav items */
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav Items - Make Sure They Are All The Same */
+.navbar ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for Nav Links */
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 15px; /* Ensure equal padding */
+    border-radius: 30px;
+    display: flex;
+    align-items: center;  /* Ensures vertical centering */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Right-side Navbar (Cart + Login Button) */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between cart and login button */
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+    background-color: #FFD700; /* Yellow background */
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px; /* Smaller width */
+    height: 28px; /* Smaller height */
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+/* Cart Icon Hover Effect */
+.cart-icon:hover {
+    background-color: #ffcc00;
+}
+
+
+/* Login Button */
+.login-btn {
+    display: flex;
+    align-items: center;
+    background-color: #FFD700;
+    padding: 8px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #ffcc00;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #FFD700; /* Change background to yellow */
+    color: black; /* Ensure the icon color is black */
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.profile-icon i {
+    font-size: 20px;
+    color: black; /* Ensure the icon color is black */
+}
+
+
+
+
+
+
+
+
+
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    font-family: Arial, sans-serif; /* Added a default font */
+}
+
+/* Cart Page - Fullscreen Layout */
+.cart-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px; /* Space below navbar */
+}
+
+/* Cart Container - Full Width and Height */
+.cart-container {
+    width: 90%; /* Adjusted to 90% of the viewport width */
+    max-width: 2200px; /* Added max-width for better readability on larger screens */
+    height: calc(100vh - 100px); /* Full height minus navbar */
+    background: white;
+    padding: 20px; /* Reduced padding */
+    border-radius: 0; /* Remove rounded edges */
+    box-shadow: none; /* Remove shadow for a flat design */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+}
+
+.cart-header {
+    width: 100%; /* Full width */
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px; /* Adjusted padding */
+    text-align: left; /* Align text to the left */
+}
+
+/* Cart Items List */
+.cart-items {
+    width: 100%; /* Full width */
+    min-height: 50vh; /* Adjusted min-height */
+    margin: 0 auto;
+    padding: 20px; /* Added padding */
+}
+
+/* Empty Cart Message */
+.empty-cart-message {
+    text-align: center;
+    font-size: 22px;
+    color: gray;
+    margin-top: 20px;
+}
+
+.cart-summary {
+    width: 100%; /* Full width */
+    text-align: right; /* Align text to the right */
+    margin-top: 20px; /* Adjusted margin */
+    padding: 20px; /* Adjusted padding */
+}
+
+/* Total and Checkout Section */
+.total-section {
+    width: 100%; /* Full width */
+    text-align: right; /* Align text to the right */
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout-button {
+    width: auto; /* Auto width */
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 16px; /* Adjusted font size */
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Added margin to position below total */
+    align-self: flex-end; /* Align button to the right */
+}
+
+/* Disabled Checkout */
+.checkout-button.disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
