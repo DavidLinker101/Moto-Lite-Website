@@ -12,263 +12,99 @@
 <!-- Header with Logo -->
 <img src="images/Motolite_Logo.png" alt="Moto-Lite Logo" class="logo-large">
 
-
 <!-- Cart and Login/Signup Box -->
 <div class="auth-cart-container">
     <!-- Cart Box -->
     <div class="cart-box">
-        <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <a href="Cart_menu_page.html"><i class="fas fa-shopping-cart"></i> Cart</a>
     </div>
     <!-- Login/Signup Box -->
     <div class="auth-box">
-        <a href="#"><i class="fas fa-user"></i> Log in/Sign up</a>
+        <a href="#" onclick="openLoginRegisterModal()"><i class="fas fa-user"></i> Log in / Sign up</a>
+
     </div>
 </div>
 
 <!-- Navigation Bar -->
 <nav>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Contacts</a></li>
-        <li><a href="#">About us</a></li>
+        <li><a href="Moto-Lite_Home_page.html">Home</a></li>
+        <li><a href="Moto-Lite_Blog_page.html">Blog</a></li>
+        <li><a href="Moto-Lite_Service_page.html">Service</a></li>
+        <li><a href="Moto-Lite_Contact_page.html">Contacts</a></li>
+        <li><a href="Moto-Lite_About_page.html">About us</a></li>
     </ul>
 </nav>
 
-    <!-- Main Content -->
-    <main>
-<!-- Category Section -->
-<section class="categories">
-    <div class="category-label-box">
-        <h2>Category</h2>
-    </div>
-    <div class="category-box">
-        <ul>
-            <!-- Engine Parts -->
-            <li class="dropdown">
-                <a href="#" class="category" data-category="engine">Engine Parts</a>
-                <ul class="dropdown-content">
-                    <li><a href="#" class="sub-category" data-category="pistons">Pistons & Rings</a></li>
-                    <li><a href="#" class="sub-category" data-category="crankshafts">Crankshafts & Bearings</a></li>
-                    <li><a href="#">Camshafts & Valvetrain</a></li>
-                    <li><a href="#">Engine Gaskets & Seals</a></li>
-                    <li><a href="#">Oil Pumps</a></li>
-                    <li><a href="#">Timing Belts & Chains</a></li>
-                    <li><a href="#">Cylinder Heads</a></li>
-                    <li><a href="#">Engine Blocks</a></li>
-                    <li><a href="#">Turbo Kits</a></li>
-                    <li><a href="#">Intercoolers</a></li>
-                </ul>
-            </li>
-
-            <!-- Electrical & Ignition -->
-            <li class="dropdown">
-                <a href="#" class="category" data-category="electrical">Electrical & Ignition</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Spark Plugs</a></li>
-                    <li><a href="#">Ignition Coils</a></li>
-                    <li><a href="#">Alternators</a></li>
-                    <li><a href="#">Starters</a></li>
-                    <li><a href="#">Batteries</a></li>
-                    <li><a href="#">Wiring Harnesses</a></li>
-                    <li><a href="#">Fuse Boxes</a></li>
-                    <li><a href="#">Relays</a></li>
-                    <li><a href="#">Voltage Regulators</a></li>
-                    <li><a href="#">Distributors</a></li>
-                </ul>
-            </li>
-
-            <!-- Fuel System -->
-            <li class="dropdown">
-                <a href="#">Fuel System</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Fuel Pumps</a></li>
-                    <li><a href="#">Fuel Injectors</a></li>
-                    <li><a href="#">Fuel Filters</a></li>
-                    <li><a href="#">Fuel Rails</a></li>
-                    <li><a href="#">Throttle Bodies</a></li>
-                    <li><a href="#">Fuel Pressure Regulators</a></li>
-                    <li><a href="#">Carburetors</a></li>
-                    <li><a href="#">Fuel Tanks</a></li>
-                    <li><a href="#">Fuel Lines</a></li>
-                    <li><a href="#">Air-Fuel Ratio Sensors</a></li>
-                </ul>
-            </li>
-
-            <!-- Exhaust System -->
-            <li class="dropdown">
-                <a href="#">Exhaust System</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Exhaust Manifolds</a></li>
-                    <li><a href="#">Catalytic Converters</a></li>
-                    <li><a href="#">Mufflers</a></li>
-                    <li><a href="#">Exhaust Pipes</a></li>
-                    <li><a href="#">O2 Sensors</a></li>
-                    <li><a href="#">Resonators</a></li>
-                    <li><a href="#">Exhaust Tips</a></li>
-                    <li><a href="#">Headers</a></li>
-                    <li><a href="#">Downpipes</a></li>
-                    <li><a href="#">Exhaust Clamps</a></li>
-                </ul>
-            </li>
-
-            <!-- Transmission & Drivetrain -->
-            <li class="dropdown">
-                <a href="#">Transmission & Drivetrain</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Clutch Kits</a></li>
-                    <li><a href="#">Transmission Fluid</a></li>
-                    <li><a href="#">Drive Shafts</a></li>
-                    <li><a href="#">Differentials</a></li>
-                    <li><a href="#">CV Joints</a></li>
-                    <!-- Additional Sub-items -->
-                    <li><a href="#">Transfer Cases</a></li>
-                    <li><a href="#">Transmission Mounts</a></li>
-                    <li><a href="#">Shift Linkages</a></li>
-                    <li><a href="#">Axles</a></li>
-                    <li><a href="#">Torque Converters</a></li>
-                </ul>
-            </li>
-
-            <!-- Cooling System -->
-            <li class="dropdown">
-                <a href="#">Cooling System</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Radiators</a></li>
-                    <li><a href="#">Water Pumps</a></li>
-                    <li><a href="#">Thermostats</a></li>
-                    <li><a href="#">Coolant Hoses</a></li>
-                    <li><a href="#">Cooling Fans</a></li>
-                    <!-- Additional Sub-items -->
-                    <li><a href="#">Radiator Caps</a></li>
-                    <li><a href="#">Coolant Reservoirs</a></li>
-                    <li><a href="#">Intercoolers</a></li>
-                    <li><a href="#">Heater Cores</a></li>
-                    <li><a href="#">Fan Clutches</a></li>
-                </ul>
-            </li>
-
-            <!-- Suspension & Steering -->
-            <li class="dropdown">
-                <a href="#">Suspension & Steering</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Shock Absorbers</a></li>
-                    <li><a href="#">Struts</a></li>
-                    <li><a href="#">Coil Springs</a></li>
-                    <li><a href="#">Control Arms</a></li>
-                    <li><a href="#">Tie Rods</a></li>
-                    <!-- Additional Sub-items -->
-                    <li><a href="#">Sway Bars</a></li>
-                    <li><a href="#">Ball Joints</a></li>
-                    <li><a href="#">Steering Racks</a></li>
-                    <li><a href="#">Bushings</a></li>
-                    <li><a href="#">Steering Pumps</a></li>
-                </ul>
-            </li>
-
-            <!-- Brake System -->
-            <li class="dropdown">
-                <a href="#">Brake System</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Brake Pads</a></li>
-                    <li><a href="#">Brake Rotors</a></li>
-                    <li><a href="#">Brake Calipers</a></li>
-                    <li><a href="#">Brake Lines</a></li>
-                    <li><a href="#">Brake Fluid</a></li>
-                    <!-- Additional Sub-items -->
-                    <li><a href="#">Master Cylinders</a></li>
-                    <li><a href="#">Brake Boosters</a></li>
-                    <li><a href="#">ABS Modules</a></li>
-                    <li><a href="#">Brake Shoes</a></li>
-                    <li><a href="#">Brake Drums</a></li>
-                </ul>
-            </li>
-
-            <!-- Lubrication System -->
-            <li class="dropdown">
-                <a href="#">Lubrication System</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Oil Filters</a></li>
-                    <li><a href="#">Oil Pans</a></li>
-                    <li><a href="#">Oil Coolers</a></li>
-                    <li><a href="#">Oil Pumps</a></li>
-                    <li><a href="#">Oil Lines</a></li>
-                    <!-- Additional Sub-items -->
-                    <li><a href="#">Oil Pressure Sensors</a></li>
-                    <li><a href="#">Oil Catch Cans</a></li>
-                    <li><a href="#">Oil Additives</a></li>
-                    <li><a href="#">Oil Drain Plugs</a></li>
-                    <li><a href="#">Oil Level Sensors</a></li>
-                </ul>
-            </li>
-
-            <!-- Air Intake System -->
-            <li class="dropdown">
-                <a href="#">Air Intake System</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Air Filters</a></li>
-                    <li><a href="#">Intake Manifolds</a></li>
-                    <li><a href="#">Throttle Bodies</a></li>
-                    <li><a href="#">Mass Air Flow Sensors</a></li>
-                    <li><a href="#">Turbochargers</a></li>
-                    <!-- Additional Sub-items -->
-                    <li><a href="#">Superchargers</a></li>
-                    <li><a href="#">Intercooler Pipes</a></li>
-                    <li><a href="#">Air Ducts</a></li>
-                    <li><a href="#">Cold Air Intakes</a></li>
-                    <li><a href="#">Bypass Valves</a></li>
-                </ul>
-            </li>
-
-            <!-- Additional Main Items -->
-            <li><a href="#">Turbochargers & Superchargers</a></li>
-            <li><a href="#">Engine Control Units (ECUs)</a></li>
-            <li><a href="#">Fuel Injectors</a></li>
-            <li><a href="#">Spark Plugs</a></li>
-            <li><a href="#">Alternators & Starters</a></li>
-        </ul>
-    </div>
-</section>
-
-         <!-- Product Section -->
-         <div class="product-section">
-            <h1 class="section-title">Products</h1>
-            <div class="product-list" id="product-list">
-                <!-- Products will be dynamically inserted here -->
-            </div>
+<!-- Main Content -->
+<main class="main-container">
+    <section class="categories">
+        <div class="category-label-box">
+            <h2>Category</h2>
+            <div class="horizontal-line"></div>
         </div>
-        
-            <!-- Product Box 1 -->
-            <div class="product-box">
-                <h2 class="product-title">All new Motor engine model</h2>
-                <p class="product-subtitle">Axe-6179A</p>
-                <div class="button-group">
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Cart</button>
-                </div>
-            </div>
-
-            <!-- Product Box 2 -->
-            <div class="product-box">
-                <h2 class="product-title">Turbocharged Engine</h2>
-                <p class="product-subtitle">Turbo-X9000</p>
-                <div class="button-group">
-                    <button class="buy-button">Buy</button>
-                    <button class="cart-button">Cart</button>
-                </div>
-            </div>
-
-            <!-- Add more product boxes as needed -->
+        <div class="category-box">
+            <ul class="clickable-list">
+                <li>
+                    <a href="#" class="main-category" data-category="engine">Engines</a>
+                    <ul class="sub-categories">
+                        <li><a href="#" data-category="pistons">Pistons & Rings</a></li>
+                        <li><a href="#" data-category="crankshafts">Crankshafts & Bearings</a></li>
+                        <li><a href="#" data-category="camshafts">Camshafts & Valvetrain</a></li>
+                        <li><a href="#" data-category="engine-gaskets">Engine Gaskets & Seals</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="main-category" data-category="electrical">Electrical & Ignition</a>
+                    <ul class="sub-categories">
+                        <li><a href="#" data-category="spark-plugs">Spark Plugs</a></li>
+                        <li><a href="#" data-category="ignition-coils">Ignition Coils</a></li>
+                        <li><a href="#" data-category="alternators">Alternators</a></li>
+                        <li><a href="#" data-category="batteries">Batteries</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="main-category" data-category="fuel-system">Fuel System</a>
+                    <ul class="sub-categories">
+                        <li><a href="#" data-category="fuel-pumps">Fuel Pumps</a></li>
+                        <li><a href="#" data-category="fuel-injectors">Fuel Injectors</a></li>
+                        <li><a href="#" data-category="fuel-filters">Fuel Filters</a></li>
+                        <li><a href="#" data-category="throttle-bodies">Throttle Bodies</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="main-category" data-category="exhaust-system">Exhaust System</a>
+                    <ul class="sub-categories">
+                        <li><a href="#" data-category="exhaust-manifolds">Exhaust Manifolds</a></li>
+                        <li><a href="#" data-category="catalytic-converters">Catalytic Converters</a></li>
+                        <li><a href="#" data-category="mufflers">Mufflers</a></li>
+                        <li><a href="#" data-category="o2-sensors">O2 Sensors</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="main-category" data-category="brake-system">Brake System</a>
+                    <ul class="sub-categories">
+                        <li><a href="#" data-category="brake-pads">Brake Pads</a></li>
+                        <li><a href="#" data-category="brake-rotors">Brake Rotors</a></li>
+                        <li><a href="#" data-category="brake-calipers">Brake Calipers</a></li>
+                        <li><a href="#" data-category="brake-fluid">Brake Fluid</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+    </section>
+
+    <div class="product-section">
+        <h1 class="section-title">Products</h1>
+        <div class="product-list" id="product-list"></div>
     </div>
 </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2090 MOTO-LITE. All rights reserved.</p>
-    </footer>
-
-    <script src="Home_page_Script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.categoryLinks = document.querySelectorAll("[data-category]");
+    });
+</script>
+<script src="Home_page_Script.js"></script>
 </body>
 </html>

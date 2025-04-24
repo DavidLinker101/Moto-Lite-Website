@@ -1,0 +1,131 @@
+/* ========== PRESERVED STYLES (DO NOT TOUCH) ========== */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Header with Logo */
+header {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-large {
+    width: 300px;
+    height: auto;
+    margin-right: auto;
+}
+
+/* Auth and Cart Container */
+.auth-cart-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+}
+.auth-box, .cart-box {
+    background-color: #FFD700;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+.auth-box { order: 2; }
+.cart-box { order: 1; }
+.auth-box a, .cart-box a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.auth-box i, .cart-box i {
+    font-size: 16px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #f0f0f0;
+    border: 5px solid #8a8a8a;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+nav ul li:first-child {
+    margin-right: auto;
+}
+nav ul li:not(:first-child) {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #ddd;
+}
+/* ========== END PRESERVED STYLES ========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== CLEANED/CONSOLIDATED STYLES ========== */
+
+/* Main Layout */
+/* === SERVICE CONTENT SECTION === */
+.service-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+}
+.service-section h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #222;
+}
+.service-section p {
+    font-size: 1.05em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.service-section strong {
+    color: #000;
+    font-weight: bold;
+}
